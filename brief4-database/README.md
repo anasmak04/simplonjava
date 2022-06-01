@@ -80,6 +80,7 @@ Modélisation et implémentation de la base de données d’une application Web 
 	create table vote(
 		id_produit serial references Produit(id_produit),
 		id_client serial references Client(id_client),
+		primary key (id_produit,id_client)
 		rate int
 	)
 	/*-------select table client ------------------*/
